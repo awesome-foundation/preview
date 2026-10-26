@@ -10,37 +10,37 @@
       
       
       
-        <link rel="canonical" href="https://awesome-foundation.github.io/cfnrain/commands/other.html">
+        <link rel="canonical" href="https://awesome-foundation.github.io/cfnrain/commands/stack/ls.html">
       
       
       
-        <link rel="prev" href="./template.html">
+        <link rel="prev" href="./deploy.html">
       
       
-        <link rel="next" href="../directives/index.html">
+        <link rel="next" href="./cat.html">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="zensical-0.0.73">
     
     
       
-        <title>Other commands - cfnrain</title>
+        <title>ls - cfnrain</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="../assets/stylesheets/modern/main.4ab2de0c.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.4ab2de0c.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.b60ce83d.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.b60ce83d.min.css">
       
       
 
@@ -59,7 +59,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
@@ -97,7 +97,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="cfnrain" class="md-header__button md-logo" aria-label="cfnrain" data-md-component="logo">
+    <a href="../../index.html" title="cfnrain" class="md-header__button md-logo" aria-label="cfnrain" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Other commands
+              ls
             
           </span>
         </div>
@@ -218,7 +218,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="cfnrain" class="md-nav__button md-logo" aria-label="cfnrain" data-md-component="logo">
+    <a href="../../index.html" title="cfnrain" class="md-nav__button md-logo" aria-label="cfnrain" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
@@ -248,7 +248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="../../index.html" class="md-nav__link">
         
   
   
@@ -274,7 +274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../install.html" class="md-nav__link">
+      <a href="../../install.html" class="md-nav__link">
         
   
   
@@ -300,7 +300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started.html" class="md-nav__link">
+      <a href="../../getting-started.html" class="md-nav__link">
         
   
   
@@ -331,6 +331,20 @@
     
       
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -352,43 +366,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Commands
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        
-          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-            <label class="md-nav__title" for="__nav_4">
-              <span class="md-nav__icon md-icon"></span>
+          <div class="md-nav__link md-nav__container">
+            <a href="./index.html" class="md-nav__link ">
               
-  
-  Commands
-
-            </label>
-            <ul class="md-nav__list" data-md-scrollfix>
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="./stack.html" class="md-nav__link">
-        
   
   
   <span class="md-ellipsis">
@@ -401,10 +381,26 @@
   
   
 
-      </a>
-    </li>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+              
   
+  Stack commands
 
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
                 
               
                 
@@ -414,14 +410,14 @@
   
   
     <li class="md-nav__item">
-      <a href="./template.html" class="md-nav__link">
+      <a href="./deploy.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Template commands
+  deploy
 
     
   </span>
@@ -450,31 +446,14 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Other commands
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="other.html" class="md-nav__link md-nav__link--active">
+      <a href="ls.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-  Other commands
+  ls
 
     
   </span>
@@ -483,48 +462,635 @@
 
       </a>
       
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./cat.html" class="md-nav__link">
         
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  cat
 
+    
+  </span>
+  
+  
 
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./logs.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  logs
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./watch.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  watch
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./rm.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  rm
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./stackset.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  stackset
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./cc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  cc
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
   
   
   
     
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    
       
-        <li class="md-nav__item">
-  <a href="#info" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        info
-      </span>
-    </span>
-  </a>
-  
-</li>
+        
+          
+        
       
-        <li class="md-nav__item">
-  <a href="#console" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        console
-      </span>
-    </span>
-  </a>
-  
-</li>
+        
       
-    </ul>
-  
-</nav>
+        
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../template/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Template commands
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Template commands
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../template/fmt.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  fmt
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../template/pkg.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  pkg
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../template/diff.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  diff
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../template/merge.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  merge
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../template/tree.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  tree
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../template/build.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  build
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../template/bootstrap.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  bootstrap
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../template/forecast.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  forecast
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../template/module.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  module
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../other/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Other commands
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Other commands
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../other/info.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  info
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../other/console.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  console
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -576,11 +1142,11 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../directives/index.html" class="md-nav__link ">
+            <a href="../../directives/index.html" class="md-nav__link ">
               
   
   
@@ -597,15 +1163,15 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
         
-          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_5">
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_7">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -623,7 +1189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../directives/embed.html" class="md-nav__link">
+      <a href="../../directives/embed.html" class="md-nav__link">
         
   
   
@@ -650,7 +1216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../directives/include.html" class="md-nav__link">
+      <a href="../../directives/include.html" class="md-nav__link">
         
   
   
@@ -677,7 +1243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../directives/env.html" class="md-nav__link">
+      <a href="../../directives/env.html" class="md-nav__link">
         
   
   
@@ -704,7 +1270,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../directives/s3.html" class="md-nav__link">
+      <a href="../../directives/s3.html" class="md-nav__link">
         
   
   
@@ -731,7 +1297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../directives/constants.html" class="md-nav__link">
+      <a href="../../directives/constants.html" class="md-nav__link">
         
   
   
@@ -758,7 +1324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../directives/implicit-uploads.html" class="md-nav__link">
+      <a href="../../directives/implicit-uploads.html" class="md-nav__link">
         
   
   
@@ -822,11 +1388,11 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../modules/index.html" class="md-nav__link ">
+            <a href="../../modules/index.html" class="md-nav__link ">
               
   
   
@@ -843,15 +1409,15 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
         
-          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_6">
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -869,7 +1435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/foreach.html" class="md-nav__link">
+      <a href="../../modules/foreach.html" class="md-nav__link">
         
   
   
@@ -896,7 +1462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/constants.html" class="md-nav__link">
+      <a href="../../modules/constants.html" class="md-nav__link">
         
   
   
@@ -923,7 +1489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/intrinsics.html" class="md-nav__link">
+      <a href="../../modules/intrinsics.html" class="md-nav__link">
         
   
   
@@ -950,7 +1516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/conditions.html" class="md-nav__link">
+      <a href="../../modules/conditions.html" class="md-nav__link">
         
   
   
@@ -977,7 +1543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/packages.html" class="md-nav__link">
+      <a href="../../modules/packages.html" class="md-nav__link">
         
   
   
@@ -1011,60 +1577,69 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../bucket-metadata.html" class="md-nav__link">
+    
+    
+      
         
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
   
   
   <span class="md-ellipsis">
     
   
-  S3 bucket metadata
+  Guides
 
     
   </span>
   
   
 
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ci.html" class="md-nav__link">
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_9">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-  
-  <span class="md-ellipsis">
-    
-  
-  CI usage
+  Guides
 
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../migrating.html" class="md-nav__link">
+      <a href="../../migrating.html" class="md-nav__link">
         
   
   
@@ -1082,15 +1657,70 @@
     </li>
   
 
-    
-      
-      
+                
+              
+                
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../pkl.html" class="md-nav__link">
+      <a href="../../ci.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  CI usage
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bucket-metadata.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  S3 bucket metadata
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pkl.html" class="md-nav__link">
         
   
   
@@ -1108,6 +1738,15 @@
     </li>
   
 
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
     
       
       
@@ -1115,8 +1754,63 @@
   
   
   
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Project
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_10">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Project
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../known-issues.html" class="md-nav__link">
+      <a href="../../known-issues.html" class="md-nav__link">
         
   
   
@@ -1131,6 +1825,15 @@
   
 
       </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
     </li>
   
 
@@ -1152,11 +1855,6 @@
                       
                     
                     
-                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-                      <div class="md-sidebar-button__wrapper">
-                        <label class="md-sidebar-button" for="__toc"></label>
-                      </div>
-                    
                   
                   <div class="md-sidebar__inner">
                     
@@ -1168,36 +1866,6 @@
   
     
   
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#info" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        info
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#console" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        console
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1222,7 +1890,7 @@
   
   
     <li class="md-path__item">
-      <a href="../index.html" class="md-path__link">
+      <a href="../../index.html" class="md-path__link">
         
   
   <span class="md-ellipsis">
@@ -1242,6 +1910,20 @@
     
       
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -1252,11 +1934,11 @@
     
     
       <li class="md-path__item">
-        <a href="./stack.html" class="md-path__link">
+        <a href="./index.html" class="md-path__link">
           
   
   <span class="md-ellipsis">
-    Commands
+    Stack commands
   </span>
 
         </a>
@@ -1275,7 +1957,7 @@
                   
 
   
-    <a href="https://github.com/awesome-foundation/cfnrain/edit/main/docs/commands/other.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/awesome-foundation/cfnrain/edit/main/docs/commands/stack/ls.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-pen" viewBox="0 0 24 24"><path d="M12.659 22H18a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v9.34"/><path d="M14 2v5a1 1 0 0 0 1 1h5M10.378 12.622a1 1 0 0 1 3 3.003L8.36 20.637a2 2 0 0 1-.854.506l-2.867.837a.5.5 0 0 1-.62-.62l.836-2.869a2 2 0 0 1 .506-.853z"/></svg>
     </a>
@@ -1283,64 +1965,19 @@
   
 
 
-<h1 id="other-commands">Other commands<a class="headerlink" href="#other-commands" title="Permanent link">&para;</a></h1>
-<p>These commands do not work with templates or stacks directly. Both take <code>-p</code> (<code>--profile</code>) and <code>-r</code> (<code>--region</code>). Both also take <code>--debug</code> and <code>--no-colour</code>, and print their usage with <code>-h</code> (<code>--help</code>).</p>
-<p>The output on this page is illustrative. It needs a real AWS account.</p>
-<h2 id="info">info<a class="headerlink" href="#info" title="Permanent link">&para;</a></h2>
-<p><code>cfnrain info</code> shows the account, region, identity and profile that cfnrain uses.</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cfnrain<span class="w"> </span>info
+<h1 id="ls">ls<a class="headerlink" href="#ls" title="Permanent link">&para;</a></h1>
+<p><code>cfnrain ls</code> lists the stacks in the current region. Add <code>-a</code> (<code>--all</code>) to list the stacks in all regions.</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cfnrain<span class="w"> </span>ls
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>cfnrain<span class="w"> </span>ls<span class="w"> </span>-a
 </span></code></pre></div>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Account:  123456789012
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Region:   eu-west-1
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Identity: arn:aws:sts::123456789012:assumed-role/Developer/jane
+<p>Give a stack name to see a summary of that stack and its change sets. With <code>-a</code>, the summary has more detail.</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>cfnrain<span class="w"> </span>ls<span class="w"> </span>app-prod
 </span></code></pre></div>
-<p><code>-c</code> (<code>--creds</code>) also prints the credential source and the credentials.</p>
-<div class="admonition danger">
-<p class="admonition-title">--creds prints your secret key</p>
-<p><code>cfnrain info --creds</code> prints the <code>SecretAccessKey</code> and the <code>SessionToken</code> in plain text. Do not run it in CI logs, screen shares or recorded terminals.</p>
-</div>
-<h2 id="console">console<a class="headerlink" href="#console" title="Permanent link">&para;</a></h2>
-<p><code>cfnrain console</code> makes a sign-in URL for the AWS console from your current credentials and opens it in a browser.</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Open the CloudFormation console</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>cfnrain<span class="w"> </span>console
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Open the CloudFormation console with a stack selected</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>cfnrain<span class="w"> </span>console<span class="w"> </span>app-prod
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Open another service</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>cfnrain<span class="w"> </span>console<span class="w"> </span>-s<span class="w"> </span>lambda
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c1"># Print the URL and do not open a browser</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>cfnrain<span class="w"> </span>console<span class="w"> </span>-u
+<p><code>-c</code> (<code>--changeset</code>) works with change sets. With no arguments it lists the stacks that have change sets. With a stack and a change set name it shows that change set.</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>cfnrain<span class="w"> </span>ls<span class="w"> </span>-c
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>cfnrain<span class="w"> </span>ls<span class="w"> </span>-c<span class="w"> </span>app-prod<span class="w"> </span>release-42
 </span></code></pre></div>
-<table>
-<thead>
-<tr>
-<th>Flag</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>-s</code>, <code>--service</code></td>
-<td>The service home page to open. The default is <code>cloudformation</code>. cfnrain selects the stack only on the <code>cloudformation</code> page.</td>
-</tr>
-<tr>
-<td><code>-u</code>, <code>--url</code></td>
-<td>Print the URL only</td>
-</tr>
-<tr>
-<td><code>-n</code>, <code>--name</code></td>
-<td>The user name to show in the console. The default comes from the role name.</td>
-</tr>
-<tr>
-<td><code>-l</code>, <code>--logout</code></td>
-<td>Sign out of the AWS console</td>
-</tr>
-</tbody>
-</table>
-<p><code>console</code> works only with IAM role credentials, not with IAM user credentials.</p>
-<p>The sign-in URL names <code>https://awesome-foundation.github.io/cfnrain/cfnrain_console.html</code> as the issuer. When your console session expires, AWS links back to <a href="../cfnrain_console.html">that page</a>.</p>
+<p><code>list</code> is an alias for <code>ls</code>.</p>
 
 
 
@@ -1380,7 +2017,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="./template.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Template commands">
+          <a href="./deploy.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: deploy">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -1390,20 +2027,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Template commands
+                deploy
               </div>
             </div>
           </a>
         
         
           
-          <a href="../directives/index.html" class="md-footer__link md-footer__link--next" aria-label="Next: Template directives">
+          <a href="./cat.html" class="md-footer__link md-footer__link--next" aria-label="Next: cat">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Template directives
+                cat
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1444,10 +2081,10 @@
       
         
         
-      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["content.action.edit","content.code.annotate","content.code.copy","content.code.select","content.tabs.link","navigation.footer","navigation.indexes","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight"],"redirect":null,"search":"../assets/javascripts/workers/search.c47bb847.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["content.action.edit","content.code.annotate","content.code.copy","content.code.select","content.tabs.link","navigation.footer","navigation.indexes","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight"],"redirect":null,"search":"../../assets/javascripts/workers/search.c47bb847.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../assets/javascripts/bundle.77dd0ce9.min.js"></script>
+      <script src="../../assets/javascripts/bundle.77dd0ce9.min.js"></script>
       
     
   </body>

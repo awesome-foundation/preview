@@ -10,13 +10,70 @@
         <loc>https://awesome-foundation.github.io/cfnrain/ci.html</loc>
       </url>
       <url>
-        <loc>https://awesome-foundation.github.io/cfnrain/commands/other.html</loc>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/other/console.html</loc>
       </url>
       <url>
-        <loc>https://awesome-foundation.github.io/cfnrain/commands/stack.html</loc>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/other/index.html</loc>
       </url>
       <url>
-        <loc>https://awesome-foundation.github.io/cfnrain/commands/template.html</loc>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/other/info.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/stack/cat.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/stack/cc.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/stack/deploy.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/stack/index.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/stack/logs.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/stack/ls.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/stack/rm.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/stack/stackset.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/stack/watch.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/template/bootstrap.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/template/build.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/template/diff.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/template/fmt.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/template/forecast.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/template/index.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/template/merge.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/template/module.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/template/pkg.html</loc>
+      </url>
+      <url>
+        <loc>https://awesome-foundation.github.io/cfnrain/commands/template/tree.html</loc>
       </url>
       <url>
         <loc>https://awesome-foundation.github.io/cfnrain/directives/constants.html</loc>
