@@ -1,0 +1,60 @@
+name: teardown preview
+
+# Removes a pull request's preview after it closes.
+
+on:
+  workflow_call:
+    inputs:
+      project:
+        description: Directory under the preview site. Use the source repo name.
+        required: true
+        type: string
+    secrets:
+      PREVIEW_DEPLOY_KEY:
+        required: true
+
+jobs:
+  teardown:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm the pull request is really closed
+        # A `closed` run can start after a later `reopened` run has already
+        # deployed. Seen on veza: a close and a reopen two seconds apart gave a
+        # deploy at 22:43:32 and a delete at 22:44:34, because the `closed`
+        # webhook sat in a queue for 100 seconds. A concurrency group cannot
+        # help, because cancel-in-progress only stops a run that is already
+        # going, not one that starts later.
+        #
+        # So ask GitHub for the state now instead of trusting the event that
+        # woke this job.
+        id: state
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          state=$(gh pr view ${{ github.event.number }} \
+                    --repo ${{ github.repository }} --json state -q .state)
+          echo "state=$state" >> "$GITHUB_OUTPUT"
+          echo "pull request ${{ github.event.number }} is $state"
+
+      - uses: actions/checkout@v7.0.1
+        if: steps.state.outputs.state != 'OPEN'
+        with:
+          repository: awesome-foundation/preview
+          ref: gh-pages
+          ssh-key: ${{ secrets.PREVIEW_DEPLOY_KEY }}
+          path: preview
+
+      - name: Remove the preview
+        if: steps.state.outputs.state != 'OPEN'
+        env:
+          DIR: ${{ inputs.project }}/pr-${{ github.event.number }}
+        run: |
+          cd preview
+          rm -rf "$DIR"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "preview: remove $DIR"
+          for _ in 1 2 3 4 5; do git push && exit 0; git pull --rebase; done
+          exit 1

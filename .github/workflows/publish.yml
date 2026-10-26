@@ -1,0 +1,92 @@
+name: publish preview
+
+# Puts an already-built site into the shared preview site and comments the URL
+# on the pull request. The calling repo builds; this workflow owns the parts
+# every project repeats: the push, the retry, and the comment.
+#
+# Secrets do not reach a workflow run from a forked pull request. A fork PR
+# therefore fails here rather than leaking the key, so previews cover
+# collaborator branches only.
+
+on:
+  workflow_call:
+    inputs:
+      project:
+        description: Directory under the preview site. Use the source repo name.
+        required: true
+        type: string
+      artifact:
+        description: Name of the artifact holding the built site.
+        required: false
+        default: preview-site
+        type: string
+      note:
+        description: >-
+          Extra lines for the pull request comment. Say which data the build
+          used and what was switched off.
+        required: false
+        default: ''
+        type: string
+    secrets:
+      PREVIEW_DEPLOY_KEY:
+        required: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v8.0.1
+        with:
+          name: ${{ inputs.artifact }}
+          path: site
+
+      # An empty artifact would replace a working preview with a blank page and
+      # still report the run green. Fail loudly instead, which is the rule the
+      # rest of this family already follows.
+      - name: Refuse an empty build
+        run: test -s site/index.html || { echo "artifact carries no index.html"; exit 1; }
+
+      - uses: actions/checkout@v7.0.1
+        with:
+          repository: awesome-foundation/preview
+          ref: gh-pages
+          ssh-key: ${{ secrets.PREVIEW_DEPLOY_KEY }}
+          path: preview
+
+      - name: Push the preview
+        env:
+          DIR: ${{ inputs.project }}/pr-${{ github.event.number }}
+          SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          rm -rf "preview/$DIR"
+          mkdir -p "preview/$(dirname "$DIR")"
+          cp -r site "preview/$DIR"
+          cd preview
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "preview: $DIR @ $SHA"
+          # Every project shares this one branch, so losing a push race is
+          # ordinary rather than a fault. More attempts than the per-repo
+          # workflows used, because there are now more repos to race with.
+          for _ in 1 2 3 4 5; do git push && exit 0; git pull --rebase; done
+          exit 1
+
+      - name: Comment the preview URL
+        env:
+          GH_TOKEN: ${{ github.token }}
+          URL: https://awesome-foundation.github.io/preview/${{ inputs.project }}/pr-${{ github.event.number }}/
+          NOTE: ${{ inputs.note }}
+        run: |
+          BODY="Preview: $URL"
+          if [ -n "$NOTE" ]; then
+            BODY="$BODY
+
+          $NOTE"
+          fi
+          BODY="$BODY
+
+          Pages needs about a minute after each push."
+          gh pr comment ${{ github.event.number }} --repo ${{ github.repository }} --edit-last --body "$BODY" \
+            || gh pr comment ${{ github.event.number }} --repo ${{ github.repository }} --body "$BODY"
