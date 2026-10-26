@@ -1181,6 +1181,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#the-pkg-help-text-lists-the-wrong-s3-format-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        The pkg help text lists the wrong S3 Format values
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#things-that-do-not-exist" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2248,6 +2259,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#the-pkg-help-text-lists-the-wrong-s3-format-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        The pkg help text lists the wrong S3 Format values
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#things-that-do-not-exist" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2309,6 +2331,8 @@
 <p>If a stack is in <code>ROLLBACK_COMPLETE</code>, <code>CREATE_FAILED</code> or <code>REVIEW_IN_PROGRESS</code>, <code>cfnrain deploy</code> deletes it before it deploys, also without <code>-y</code>. See <a href="getting-started.html#change-the-stack">Getting started</a>.</p>
 <h2 id="implicit-uploads-fail-without-an-error">Implicit uploads fail without an error<a class="headerlink" href="#implicit-uploads-fail-without-an-error" title="Permanent link">&para;</a></h2>
 <p>If an <a href="directives/implicit-uploads.html">implicit upload</a> fails, for example because the local path does not exist, cfnrain leaves the path in the template and continues. CloudFormation then fails on the path. Run <code>cfnrain pkg --debug</code> to see the reason.</p>
+<h2 id="the-pkg-help-text-lists-the-wrong-s3-format-values">The pkg help text lists the wrong S3 Format values<a class="headerlink" href="#the-pkg-help-text-lists-the-wrong-s3-format-values" title="Permanent link">&para;</a></h2>
+<p><code>cfnrain pkg --help</code> lists <code>Format: Uri|Http</code>. The code expects <code>URI</code>, <code>Http</code> or <code>Object</code>, and <code>Object</code> is the default when you set both <code>BucketProperty</code> and <code>KeyProperty</code>. The help text also leaves out the <code>Run</code> and <code>Extension</code> options. See <a href="directives/s3.html">S3 and S3Http</a> for the correct values.</p>
 <h2 id="things-that-do-not-exist">Things that do not exist<a class="headerlink" href="#things-that-do-not-exist" title="Permanent link">&para;</a></h2>
 <p>Older Rain documentation describes these, but the code does not have them:</p>
 <ul>

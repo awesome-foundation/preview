@@ -2516,7 +2516,7 @@
 </tbody>
 </table>
 <p>If you do not set <code>Format</code>, the default depends on the other options. When you set both <code>BucketProperty</code> and <code>KeyProperty</code>, the default is <code>Object</code>. Otherwise the default is <code>URI</code>.</p>
-<p>The values are case sensitive. Write <code>URI</code>, not <code>Uri</code>. With <code>Format: Uri</code>, packaging stops with <code>unexpected S3 output format: Uri</code>. The <code>pkg</code> help text in Rain showed <code>Uri</code>, which was wrong.</p>
+<p>The values are case sensitive. Write <code>URI</code>, not <code>Uri</code>. With <code>Format: Uri</code>, packaging stops with <code>unexpected S3 output format: Uri</code>. The <code>cfnrain pkg</code> help text, inherited from Rain, still shows <code>Uri</code>, which is wrong. See <a href="../known-issues.html">Known issues</a>.</p>
 <p><code>Format: Object</code> without both property names stops with <code>missing BucketProperty or KeyProperty</code>.</p>
 <h3 id="run">Run<a class="headerlink" href="#run" title="Permanent link">&para;</a></h3>
 <p><code>Run</code> names a script, relative to the template file. cfnrain runs it in the template's directory before the upload, with no arguments. Use it to build the content that <code>Path</code> points to:</p>

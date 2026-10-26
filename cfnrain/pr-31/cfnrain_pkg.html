@@ -2354,15 +2354,13 @@
                                and embeds the S3 URI into the template as a string</p>
 <p>!Rain::S3 <object>           supply an object with the following properties: 
     Path: <path>               a file or directory to be uploaded to S3
-    Zip: true|false            If "true", cfnrain will zip <path> even if it is a file
+    Zip: true|false            If "true", cfnrain with zip <path> even if it is a file
     BucketProperty: <bucket>   If you supply "BucketProperty" and "KeyProperty", cfnrain pkg will
     KeyProperty: <key>         include the uploaded file/directory's details as an object in the template
                                with the property names you specify.
-    Format: URI|Http|Object    Specify which format cfnrain pkg should return the S3 location as.
-                               The default is "Object" if you supply BucketProperty and KeyProperty,
-                               and "URI" otherwise. The values are case sensitive.
-    Run: <script>              A script to run before the upload, relative to the template
-    Extension: <ext>           An extension to add to the S3 object key</p>
+    Format: Uri|Http           Specify which format cfnrain pkg should return the S3 location as.
+                               Do not specify this property if you supply BucketProperty and KeyProperty.
+                               The default Format is "Uri".</p>
 <p>!Rain::Module <url>          Supply a URL to a rain module, which is similar to a CloudFormation module, 
                                but allows for type inheritance. One of the resources in the module yaml file 
                                must be called "ModuleExtension", and it must have a Metadata entry called 
@@ -2391,7 +2389,7 @@
 </span></code></pre></div>
 <h3 id="see-also">SEE ALSO<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="cfnrain.md">cfnrain</a>  - </li>
+<li><a href="cfnrain.html">cfnrain</a>  - </li>
 </ul>
 
 
